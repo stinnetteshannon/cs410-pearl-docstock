@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Presentations — DocStock, Team Pearl</title>
+<meta name="description" content="Team Pearl's Working Draft Feasibility Presentation for DocStock.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="wordmark" href="index.html">Doc<span>Stock</span></a>
+    <nav aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="presentations.html" aria-current="page">Presentations</a>
+      <a href="team.html">Team</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="band" style="border-top:0">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Working Draft Feasibility Presentation</h2>
+        <p>Roughly half of filled prescriptions are taken incorrectly, and nonadherence costs the U.S. an estimated $100–300 billion a year. DocStock is a smartphone and web app that turns a user's medications into one schedule with dose reminders, activity logging, refill alerts, and interaction checks. This deck covers the problem, the current versus proposed process flow, what the app will and will not do, how it compares to Medisafe, MyTherapy, and Round Health, the major functional components, and the customer, technical, security, and legal risks with their mitigations.</p>
+      </div>
+
+      <div class="deck-frame" id="deckFrame">
+        <iframe id="deck"
+                src="presentations/DocStock%20Feasibility%20V2.pdf"
+                title="Team Pearl Working Draft Feasibility Presentation"
+                allowfullscreen
+                loading="lazy"></iframe>
+      </div>
+
+      <div class="deck-meta">
+        <span>Team Pearl</span>
+        <span>CS 410, Old Dominion University</span>
+        <span>Fall 2026</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p>Team Pearl — CS 410, Old Dominion University</p>
+  </div>
+</footer>
+
+<script>
+  var deck = document.getElementById('deck');
+  if (deck && deck.getAttribute('src').indexOf('REPLACE_WITH_EMBED_URL') !== -1) {
+    document.getElementById('deckFrame').hidden = true;
+    document.getElementById('deckEmpty').hidden = false;
+    deck.removeAttribute('src');
+  }
+</script>
+
+</body>
+</html>

@@ -2,7 +2,7 @@
 
 > *A reminder a day keeps Doc at bay.*
 
-DocStock is a web-based application that helps people manage their prescribed medication schedules. Users enter their medications and dosing schedules, and the app organizes everything into an easy-to-follow plan — sending reminders when doses are due, letting users log what they've taken, and tracking how much medicine is left.
+DocStock is a smartphone and web application that helps people manage their prescribed medication schedules. Users enter their medications and dosing schedules, and the app organizes everything into an easy-to-follow plan — sending reminders when doses are due, letting users log what they've taken, and tracking how much medicine is left.
 
 Built by **Team Pearl**.
 
@@ -20,7 +20,7 @@ The scale of the problem:
 
 ## The Solution
 
-DocStock centralizes prescription management in one dashboard reachable from any device with a browser. Users input their medications once, and the app handles scheduling, reminders, adherence tracking, and supply monitoring — reducing the manual steps involved in staying on top of a medication regimen.
+DocStock centralizes prescription management in one dashboard reachable from any device. Users input their medications once, and the app handles scheduling, reminders, adherence tracking, and supply monitoring — reducing the manual steps involved in staying on top of a medication regimen.
 
 ## Features
 
@@ -39,7 +39,6 @@ DocStock centralizes prescription management in one dashboard reachable from any
 - Give medical advice or replace healthcare professionals
 - Log symptoms, mood, or health metrics (blood pressure, glucose, etc.)
 - Integrate directly with pharmacies to pull prescriptions automatically
-- Function as a native mobile app (DocStock is web-based)
 
 ## How It Compares
 
@@ -52,7 +51,7 @@ DocStock centralizes prescription management in one dashboard reachable from any
 | Exportable adherence report | ✔ | Partial | ✔ | — |
 | Symptom / health metric logging | — | — | ✔ | — |
 | Multiple user profiles | ✔ | ✔ | ✔ | ✔ |
-| Web-based (browser, not app-only) | ✔ | — | — | — |
+| Web-based (browser and phone app) | ✔ | — | — | — |
 | Free / no paywall | Partial | Partial | ✔ | Partial |
 
 ## Architecture
