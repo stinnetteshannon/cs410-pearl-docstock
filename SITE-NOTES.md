@@ -7,9 +7,12 @@ Plain HTML and CSS. No build step, no Jekyll. GitHub Pages serves it as-is.
 ```
 index.html            home / landing
 presentations.html    feasibility deck embed
+labs.html             lab writeup embeds
 team.html             bios for all eight members
 assets/styles.css     all styling
 images/               member photos go here
+presentations/        deck PDFs
+Labs/                 lab PDFs
 ```
 
 ## Three things to fill in
@@ -18,6 +21,13 @@ images/               member photos go here
 it, export the PowerPoint as PDF, drop it in `presentations/`, and point the iframe
 `src` in `presentations.html` at it. Encode any spaces in the filename as `%20`
 (e.g. `presentations/DocStock%20Feasibility%20V2.pdf`).
+
+**1b. The labs.** Same idea for `labs.html`, which embeds PDFs out of `Labs/`
+(capital `L` &mdash; GitHub Pages is case-sensitive). To add the next lab, copy the
+existing `<section class="band">` in `labs.html`, point its iframe and its
+"Open the PDF" link at the new file, and update the heading, blurb, and meta line.
+Lab PDFs are portrait pages rather than 16:9 slides, so the frame uses
+`class="deck-frame deck-frame--doc"`.
 
 **2. Photos.** Drop a JPG for each member into `images/` using the filenames already
 referenced in `team.html` (`isaiah-gamble.JPEG`, `julia-hairston.JPEG`,
