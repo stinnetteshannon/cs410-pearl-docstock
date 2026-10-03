@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Presentations — DocStock, Team Pearl</title>
-<meta name="description" content="Team Pearl's Working Draft Feasibility Presentation for DocStock.">
+<meta name="description" content="Team Pearl's Final Feasibility Presentation and Working Draft Design Presentation for DocStock.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -20,6 +20,8 @@
       <a href="presentations.html" aria-current="page">Presentations</a>
       <a href="labs.html">Labs</a>
       <a href="team.html">Team</a>
+      <a href="glossary.html">Glossary</a>
+      <a href="references.html">References</a>
     </nav>
   </div>
 </header>
@@ -28,25 +30,61 @@
   <section class="band" style="border-top:0">
     <div class="wrap">
       <div class="section-head">
-        <h2>Feasibility Presentation</h2>
-        <p>Roughly half of filled prescriptions are taken incorrectly, 
-          and nonadherence costs the U.S. an estimated $100–300 billion a year. 
-          DocStock is a smartphone and web app that turns a user's medications into one 
-          schedule with dose reminders, activity logging, refill alerts, and interaction checks. 
-          This deck covers the problem, the current versus proposed process flow, what the app will 
-          and will not do, how it compares to Medisafe, MyTherapy, and Round Health, the major 
+        <h2>Final Feasibility Presentation</h2>
+        <p>Roughly half of filled prescriptions are taken incorrectly,
+          and nonadherence costs the U.S. an estimated $100–300 billion a year.
+          DocStock is a smartphone and web app that turns a user's medications into one
+          schedule with dose reminders, activity logging, refill alerts, and interaction checks.
+          This deck covers the problem, the current versus proposed process flow, what the app will
+          and will not do, how it compares to Medisafe, MyTherapy, and Round Health, the major
           functional components, and the customer, technical, security, and legal risks with their mitigations.</p>
       </div>
 
-      <div class="deck-frame" id="deckFrame">
-        <iframe id="deck"
-                src="presentations/DocStock%20Feasibility%20V3.1.pdf"
-                title="Team Pearl Working Draft Feasibility Presentation"
+      <div class="deck-frame">
+        <iframe src="presentations/DocStock%20Feasibility%20V3.2.pdf"
+                title="Team Pearl Final Feasibility Presentation"
                 allowfullscreen
                 loading="lazy"></iframe>
       </div>
 
+      <p class="deck-fallback">
+        <a class="button button--quiet" href="presentations/DocStock%20Feasibility%20V3.2.pdf" target="_blank" rel="noopener">Open the PDF in a new tab</a>
+      </p>
+
       <div class="deck-meta">
+        <span>Final version</span>
+        <span>Team Pearl</span>
+        <span>CS 410, Old Dominion University</span>
+        <span>Fall 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Working Draft Design Presentation</h2>
+        <p>The design presentation builds on the feasibility work and moves toward the prototype.
+          It adds the core algorithms behind DocStock &mdash; dose schedule generation, reminders and
+          missed-dose detection, drug interaction screening, supply tracking and refill prediction,
+          adherence reports, and caregiver access control &mdash; along with a draft database schema
+          and a comparison of the real-world product with the prototype. This is a working draft,
+          and the work breakdown structure and GUI mockups are still in progress.</p>
+      </div>
+
+      <div class="deck-frame">
+        <iframe src="presentations/DocStock%20Design%20V1.pdf"
+                title="Team Pearl Working Draft Design Presentation"
+                allowfullscreen
+                loading="lazy"></iframe>
+      </div>
+
+      <p class="deck-fallback">
+        <a class="button button--quiet" href="presentations/DocStock%20Design%20V1.pdf" target="_blank" rel="noopener">Open the PDF in a new tab</a>
+      </p>
+
+      <div class="deck-meta">
+        <span>Working draft</span>
         <span>Team Pearl</span>
         <span>CS 410, Old Dominion University</span>
         <span>Fall 2026</span>
@@ -58,17 +96,12 @@
 <footer class="site-foot">
   <div class="wrap">
     <p>Team Pearl — CS 410, Old Dominion University</p>
+    <p class="foot-links">
+      <a href="https://www.odu.edu/">Old Dominion University</a>
+      <a href="https://www.odu.edu/computer-science">Department of Computer Science</a>
+    </p>
   </div>
 </footer>
-
-<script>
-  var deck = document.getElementById('deck');
-  if (deck && deck.getAttribute('src').indexOf('REPLACE_WITH_EMBED_URL') !== -1) {
-    document.getElementById('deckFrame').hidden = true;
-    document.getElementById('deckEmpty').hidden = false;
-    deck.removeAttribute('src');
-  }
-</script>
 
 </body>
 </html>

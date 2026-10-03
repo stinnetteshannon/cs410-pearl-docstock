@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Glossary — DocStock, Team Pearl</title>
+<meta name="description" content="Definitions of the medical and technical terms used in Team Pearl's DocStock project.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="wordmark" href="index.html">Doc<span>Stock</span></a>
+    <nav aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="presentations.html">Presentations</a>
+      <a href="labs.html">Labs</a>
+      <a href="team.html">Team</a>
+      <a href="glossary.html" aria-current="page">Glossary</a>
+      <a href="references.html">References</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="band" style="border-top:0">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Glossary</h2>
+        <p>Medical and technical terms used across the DocStock presentations, the lab deliverables, and this site.</p>
+      </div>
+
+      <dl class="glossary">
+        <div>
+          <dt>Adherence</dt>
+          <dd>The extent to which a user follows their prescribed medication schedule, including taking
+            medication at the correct time, frequency, and dosage.</dd>
+        </div>
+        <div>
+          <dt>Adherence report</dt>
+          <dd>A summary of doses taken on time, taken late, and missed over a chosen date range.
+            DocStock can export it as a PDF or CSV file for a healthcare provider.</dd>
+        </div>
+        <div>
+          <dt>bcrypt</dt>
+          <dd>A password-hashing algorithm designed to be slow to compute, which makes stolen password
+            data much harder to crack. DocStock uses it to hash passwords before storing them
+            <a href="references.html#ref-9">[9]</a>.</dd>
+        </div>
+        <div>
+          <dt>Caregiver</dt>
+          <dd>A family member or other person who helps someone manage their medications. In DocStock,
+            the account owner can invite a caregiver with view or edit access to specific profiles and
+            revoke that access at any time.</dd>
+        </div>
+        <div>
+          <dt>CI/CD</dt>
+          <dd>Continuous integration and continuous deployment: automatically building and testing code
+            each time changes are pushed, and deploying it once the tests pass. DocStock uses GitHub
+            Actions for this.</dd>
+        </div>
+        <div>
+          <dt>Dose schedule</dt>
+          <dd>The list of specific dates and times each medication is due, generated from the
+            prescription's frequency, such as twice daily or every 8 hours.</dd>
+        </div>
+        <div>
+          <dt>Drug interaction</dt>
+          <dd>A potentially unwanted effect that can occur when two or more medications interact with each other.</dd>
+        </div>
+        <div>
+          <dt>Express.js</dt>
+          <dd>A web framework for Node.js. DocStock uses it to build the backend API that the web and
+            mobile apps communicate with.</dd>
+        </div>
+        <div>
+          <dt>Grace window</dt>
+          <dd>The time after a dose is due during which it can still be logged before DocStock marks it
+            as missed, for example 60 minutes.</dd>
+        </div>
+        <div>
+          <dt>GUI</dt>
+          <dd>Graphical user interface: the screens, buttons, and other visual elements a person uses to
+            interact with an application.</dd>
+        </div>
+        <div>
+          <dt>Missed dose</dt>
+          <dd>A scheduled dose that is not logged within its grace window. A caregiver can optionally be
+            notified when one occurs.</dd>
+        </div>
+        <div>
+          <dt>MySQL</dt>
+          <dd>An open-source relational database. DocStock uses it to store users, medications, schedules,
+            dose history, and supply data.</dd>
+        </div>
+        <div>
+          <dt>Node.js</dt>
+          <dd>A runtime that executes JavaScript on a server. DocStock's backend runs on Node.js.</dd>
+        </div>
+        <div>
+          <dt>Nonadherence</dt>
+          <dd>Failure to correctly follow a prescribed medication regimen.</dd>
+        </div>
+        <div>
+          <dt>Prescription</dt>
+          <dd>A medication ordered for a patient by a licensed provider.</dd>
+        </div>
+        <div>
+          <dt>Prototype</dt>
+          <dd>A limited, working version of DocStock built to demonstrate its main features using
+            simulated users and data, as opposed to the full real-world product.</dd>
+        </div>
+        <div>
+          <dt>Push notification</dt>
+          <dd>A message an app sends to a device even when the app is not open. DocStock uses push
+            notifications on mobile and browser notifications on the web
+            <a href="references.html#ref-11">[11]</a>.</dd>
+        </div>
+        <div>
+          <dt>React Native</dt>
+          <dd>A framework for building iOS and Android apps from a single JavaScript codebase.
+            DocStock's mobile app is built with it.</dd>
+        </div>
+        <div>
+          <dt>Refill alert</dt>
+          <dd>A notification sent when a medication's remaining supply drops to a set threshold, for
+            example 7 days, so the user can refill it before running out.</dd>
+        </div>
+        <div>
+          <dt>RxNorm and RxCUI</dt>
+          <dd>RxNorm is a standard naming system for clinical drugs maintained by the U.S. National
+            Library of Medicine, and each drug in it has an identifier called an RxCUI. DocStock converts
+            medication names to RxCUIs before screening for interactions
+            <a href="references.html#ref-8">[8]</a>.</dd>
+        </div>
+        <div>
+          <dt>Supply tracking</dt>
+          <dd>Keeping a running count of how much of each medication is left. Each logged dose subtracts
+            from the count, and entering a refill resets it.</dd>
+        </div>
+        <div>
+          <dt>TOTP</dt>
+          <dd>Time-based one-time password: a short code, generated by an authenticator app, that changes
+            every 30 seconds. It is used as the second step in two-step verification
+            <a href="references.html#ref-10">[10]</a>.</dd>
+        </div>
+        <div>
+          <dt>Two-step verification</dt>
+          <dd>Signing in with a password plus a second proof of identity, such as a one-time code. Also
+            called multi-factor authentication. DocStock offers it as an optional security setting
+            <a href="references.html#ref-6">[6]</a>.</dd>
+        </div>
+        <div>
+          <dt>UTC</dt>
+          <dd>Coordinated Universal Time, the worldwide time standard. DocStock stores dose times in UTC
+            and displays them in the user's local time zone.</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p>Team Pearl — CS 410, Old Dominion University</p>
+    <p class="foot-links">
+      <a href="https://www.odu.edu/">Old Dominion University</a>
+      <a href="https://www.odu.edu/computer-science">Department of Computer Science</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

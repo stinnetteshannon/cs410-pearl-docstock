@@ -5,10 +5,12 @@ Plain HTML and CSS. No build step, no Jekyll. GitHub Pages serves it as-is.
 ## Files
 
 ```
-index.html            home / landing
-presentations.html    feasibility deck embed
+index.html            home / landing (pitch, problem, customer, solution)
+presentations.html    feasibility (final) and design (working draft) deck embeds
 labs.html             lab writeup embeds
 team.html             bios for all eight members
+glossary.html         project terms
+references.html       IEEE references, anchored as #ref-1, #ref-2, ...
 assets/styles.css     all styling
 images/               member photos go here
 presentations/        deck PDFs

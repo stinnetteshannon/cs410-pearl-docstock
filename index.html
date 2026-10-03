@@ -20,6 +20,8 @@
       <a href="presentations.html">Presentations</a>
       <a href="labs.html">Labs</a>
       <a href="team.html">Team</a>
+      <a href="glossary.html">Glossary</a>
+      <a href="references.html">References</a>
     </nav>
   </div>
 </header>
@@ -32,11 +34,11 @@
         <p class="kicker">Team Pearl, CS 410 at Old Dominion University</p>
         <h1>DocStock</h1>
         <p class="tagline">A reminder a day keeps Doc at bay.</p>
-        <p class="lede">DocStock turns a prescription list into a daily plan. 
-          It tells people when a dose is due, keeps a record of what was taken, 
+        <p class="lede">DocStock turns a prescription list into a daily plan.
+          It tells people when a dose is due, keeps a record of what was taken,
           and warns them before a bottle runs out.</p>
         <div class="next-links">
-          <a class="button" href="presentations.html">See the feasibility presentation</a>
+          <a class="button" href="presentations.html">See the presentations</a>
           <a class="button button--quiet" href="team.html">Meet the team</a>
         </div>
       </div>
@@ -44,20 +46,82 @@
     </div>
   </section>
 
+  <section class="band band--shell">
+    <div class="wrap">
+      <div class="section-head" style="margin-bottom:0">
+        <h2>Elevator pitch</h2>
+        <p>DocStock is a web and mobile app that helps people and their caregivers
+          manage prescriptions by scheduling doses, screening for drug interactions,
+          and tracking supply, with the goal of increasing medication adherence.</p>
+      </div>
+    </div>
+  </section>
+
   <section class="band">
     <div class="wrap">
       <div class="section-head">
-        <h2>Why it matters</h2>
-        <p>People who take medications regularly struggle to remember doses, 
-          track what they have taken, and notice when a supply is running low. 
-          The result is missed, delayed, or doubled doses.</p>
+        <h2>The problem</h2>
+        <p>Many people who take medications regularly have difficulty managing their
+          medication schedules, remembering doses, tracking whether medications were taken,
+          and knowing if their supply is running low. These difficulties can lead to missed,
+          delayed, or repeated doses.</p>
       </div>
       <ul class="rule-list">
         <li>About one in five new prescriptions in the U.S. is never filled.</li>
         <li>Roughly half of filled prescriptions are taken incorrectly &mdash; wrong time, dose, frequency, or duration.</li>
         <li>Nonadherence costs an estimated $100&ndash;300 billion in U.S. health care spending each year.</li>
       </ul>
-      <p class="source">Source: Centers for Disease Control and Prevention, <em>Morbidity and Mortality Weekly Report</em>, vol. 66, no. 45, 2017.</p>
+      <p class="source">Source: Centers for Disease Control and Prevention, <em>Morbidity and Mortality Weekly Report</em>, vol. 66, no. 45, 2017 <a href="references.html#ref-1">[1]</a>.</p>
+    </div>
+  </section>
+
+  <section class="band band--shell">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Customer and end user</h2>
+        <p>DocStock is built for people who take prescription medications regularly,
+          and for the people who help them stay on schedule.</p>
+      </div>
+
+      <div class="grid">
+        <div class="feature">
+          <h3>Customer</h3>
+          <p>Individuals and families who manage prescriptions at home and want one place,
+            on a phone or in a browser, to keep doses, refills, and interaction warnings together.</p>
+        </div>
+        <div class="feature">
+          <h3>End user: patients</h3>
+          <p>Anyone on a regular medication schedule, especially people managing several prescriptions,
+            who needs reminders, a record of doses taken, and a warning before supply runs low.</p>
+        </div>
+        <div class="feature">
+          <h3>End user: caregivers</h3>
+          <p>Family members and caregivers who are granted access to a patient's profile,
+            or who manage several profiles under one account, and can be alerted to missed doses.</p>
+        </div>
+        <div class="feature">
+          <h3>Also served: healthcare providers</h3>
+          <p>Doctors and pharmacists receive an exported adherence report that patients
+            bring to appointments.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Solution statement</h2>
+      </div>
+      <p>DocStock will be a smartphone and web application that helps people manage their
+        prescribed medication schedules. Users enter their medications, dosing instructions,
+        and current supply, and DocStock organizes everything into a single, easy-to-follow schedule.</p>
+      <p>When a new medication is added, DocStock checks it against the user's active medication
+        list and warns the user of known drug interactions. The app sends reminders when doses
+        are due, lets users record each dose taken, tracks remaining supply, and alerts the user
+        before a refill is needed.</p>
+      <p>Adherence history is compiled into a report that can be exported for a healthcare provider.
+        Caregivers can be granted access, and multiple profiles can be managed under one account.</p>
     </div>
   </section>
 
@@ -65,7 +129,7 @@
     <div class="wrap">
       <div class="section-head">
         <h2>What DocStock does</h2>
-        <p>Available on a phone or in a browser, so a patient, a family member, 
+        <p>Available on a phone or in a browser, so a patient, a family member,
           or a caregiver can reach the same plan from any device.</p>
       </div>
 
@@ -106,7 +170,7 @@
       </div>
       <ul class="rule-list">
         <li>It does not order refills on a user's behalf.</li>
-        <li>It does not give medical advice.</li>
+        <li>It does not give medical advice. Interaction warnings are informational, and users are directed to confirm with their provider or pharmacist.</li>
         <li>It does not log symptoms, mood, or other health metrics.</li>
         <li>It does not connect directly to pharmacy systems.</li>
       </ul>
@@ -118,6 +182,10 @@
 <footer class="site-foot">
   <div class="wrap">
     <p>Team Pearl — CS 410, Old Dominion University</p>
+    <p class="foot-links">
+      <a href="https://www.odu.edu/">Old Dominion University</a>
+      <a href="https://www.odu.edu/computer-science">Department of Computer Science</a>
+    </p>
   </div>
 </footer>
 

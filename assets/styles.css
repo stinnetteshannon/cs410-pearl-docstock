@@ -99,7 +99,8 @@ p { margin: 0 0 1em; max-width: var(--measure); }
 .masthead nav {
   margin-left: auto;
   display: flex;
-  gap: 22px;
+  flex-wrap: wrap;
+  gap: 6px 22px;
 }
 
 .masthead nav a {
@@ -359,6 +360,51 @@ p { margin: 0 0 1em; max-width: var(--measure); }
 
 .member p { font-size: 0.95rem; color: var(--ink-soft); margin-bottom: 0; }
 
+/* ---------- Glossary ---------- */
+
+.glossary { margin: 0; max-width: 880px; }
+
+.glossary div {
+  display: grid;
+  grid-template-columns: minmax(0, 15rem) minmax(0, 1fr);
+  gap: 4px 32px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.glossary div:first-child { border-top: 1px solid var(--line); }
+
+.glossary dt { font-weight: 600; }
+
+.glossary dd { margin: 0; color: var(--ink-soft); max-width: var(--measure); }
+
+@media (max-width: 620px) { .glossary div { grid-template-columns: 1fr; } }
+
+/* ---------- References ---------- */
+
+.ref-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 880px;
+}
+
+.ref-list li {
+  display: grid;
+  grid-template-columns: 2.6rem minmax(0, 1fr);
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink-soft);
+  font-size: 0.97rem;
+  overflow-wrap: anywhere;
+}
+
+.ref-list li:first-child { border-top: 1px solid var(--line); }
+
+.ref-list .ref-num { color: var(--ink); font-weight: 600; }
+
+.ref-list li:target { background: var(--shell); }
+
 /* ---------- Footer ---------- */
 
 .site-foot {
@@ -368,12 +414,24 @@ p { margin: 0 0 1em; max-width: var(--measure); }
   color: var(--ink-soft);
 }
 
+.site-foot .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px 28px;
+}
+
 .site-foot p { margin: 0; max-width: none; }
+
+.foot-links { display: flex; flex-wrap: wrap; gap: 6px 22px; }
+
+.foot-links a { color: var(--ink-soft); }
+.foot-links a:hover { color: var(--ink); }
 
 /* ---------- Small screens ---------- */
 
 @media (max-width: 780px) {
   .hero .wrap { grid-template-columns: 1fr; }
   .pearl { max-width: 190px; grid-row: 1; }
-  .masthead nav { width: 100%; margin-left: 0; gap: 18px; }
+  .masthead nav { width: 100%; margin-left: 0; gap: 6px 18px; }
 }
